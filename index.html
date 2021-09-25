@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: black;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            color: white;
+        }
+
+        .navbar a:hover,.dropdown:hover .dropbtn {
+            background-color: black;
+            color: white;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: black;
+            color: white;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .text > h1 {
+            position: absolute;
+           margin-left: 15%;
+           margin-top: -35%;
+           font-size: 75px;
+           color: white;
+           
+          }
+          
+        .text > p{
+            position: absolute;
+           margin-left: 15%;
+           margin-top: -30%;
+           font-size: 28px;
+           color: white;
+
+
+        }
+    
+
+        .text > img{
+        display: block;
+      
+    
+        }
+
+        .para{
+            position: relative;
+           margin-left: 50%;
+           transform: translate(-28%);
+           font-size: 25px;
+        }
+        body{
+            background-color: white;
+        }
+        body {
+    margin: 0;
+    padding: 0px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  h2,.row{
+      position: relative;
+      /* margin-top: 5%; */
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 0px;
+    
+  }
+  
+  .card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    margin: 8px;
+  }
+  
+
+  .container {
+    padding: 0 25%;
+    font-size: 25px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
+#Git{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+body{
+    background-color: rgb(238, 230, 230);
+    /* background-color: rgb(226, 238, 243); */
+}
+#line{
+    width: 65%;
+    border: 0.5px solid black;
+    
+}
+#get{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+ </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" id="home">Home</a>
+        <a href="#" id="account">Account</a>
+        <a href="#" id="help">Help</a>
+        <a href="#" id="aboutus">About</a>
+        <a href="#" id="books">Books</a>
+        <div class="dropdown">
+            <button class="dropbtn"> Topic
+               
+            </button>
+            <div class="dropdown-content">
+                <a href="#" id="course">HTML</a>
+                <a href="#" id="course">CSS</a>
+                <a href="#" id="course">JAVASCRIPT</a>
+                <a href="#" id="course">PYTHON</a>
+                <a href="#" id="course">DJANGO</a>
+                <a href="#" id="course">FLASK</a>
+                <a href="#" id="course">MYSQL</a>
+                <a href="#" id="course">GIT-HUB</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="text">
+        <img src="Images/home4.jpg" alt="Error" height="650px" width="100%">
+        <h1 >STACK UP</h1> <br>
+        <p>Furnish your learning skills!</p>
+    </div>
+
+    <p class="para" id="get">
+        Get started in full stack development 
+    </p>
+    <hr id="line">
+        <br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+                <h2>HTML</h2>
+                <p> <ul> <li> HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet</li>. <li> The markup tells web browsers how to display a web page's words and images.</li></ul></p>
+              </div>
+          </div>
+        </div>
+       
+      
+        <div class="column">
+          <div class="card">
+              <div class="container">  
+                  <img  src="Images/html_main.png" alt="Error" width="450px" height="350px">       
+            </div>
+          </div>
+        </div>
+        </div>
+        <hr id="line">
+        <br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+                <img  src="Images/css3.jpg" alt="Error" width="450px" height="350px">
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <div class="container">  
+                  <h2>Css</h2>
+                  <p> <ul>
+                     <li> CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). </li> <li> This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files (. css).</li></ul></p>       
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr id="line">
+        <br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+                <h2>JavaScript</h2>
+                <p> <ul><li>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</li> <li> Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</li></ul> </p>
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <div class="container" id="Js">  
+                  <img  src="Images/javascripthome.jpg" alt="Error" width="600px" height="350px">      
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr id="line">
+        <br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+                <img src="Images/Python_logo_and_wordmark.svg.png" alt="Error" width="600px" height="350px">
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <div class="container">  
+                  <h2>Python</h2> 
+                  <p><ul><li>Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis.</li><li>Python is a general purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.</li></ul></p>      
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr id="line">
+        <br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+                <h2>MYSQL</h2>
+                <p><ul><li>MySQL is a database management system.</li><li>t may be anything from a simple shopping list to a picture gallery or the vast amounts of information in a corporate network. To add, access, and process data stored in a computer database, you need a database management system such as MySQL Server.</li></ul></p>
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <div class="container">  
+                  <img src="Images/MySQL_logo.svg.png" alt="Error" width="450px" height="350px">       
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr id="line">
+        <br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container" id="Git">
+                <img src="Images/Github.png" alt="Error" width="250px" height="250px">
+              </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+              <div class="container">  
+                  <h2>GIT-HUB</h2>
+                  <p><ul><li>GitHub is a Git repository hosting service, but it adds many of its own features. </li><li>While Git is a command line tool, GitHub provides a Web-based graphical interface. </li><li>While Git is a command line tool, GitHub provides a Web-based graphical interface. </li></ul></p>       
+            </div>
+          </div>
+        </div>
+    </div>
+   
+
+
+</body>
+<script src="index.js"></script>
+</html>
