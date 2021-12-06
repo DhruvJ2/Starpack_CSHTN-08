@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <style>
+        #topic{
+            position: relative;
+            margin-left: 50%;
+            transform: translate(-15%);
+            font-size: larger;
+        }
+        .q{
+            position:relative;
+            margin-top: 5%;
+        }
+        input{
+            border: none;
+            border-bottom:2px solid black;
+        }
+        button{
+            position: relative;
+            margin-left: 50%;
+            transform: translate(-80%);
+        }
+
+        .container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 90%;
+    width: 70%;
+    /* border: 1px solid black; */
+    margin-left: 15%;
+    margin-top: 50px;
+    /* padding-right: 9%; */
+    
+}
+body{
+    background-image: url("Images/Bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.center{
+    padding-left: 10%;
+}
+.topic{
+    font-size: 30px;
+    font-weight: bold;
+}
+#line{
+    margin-right: 10%;
+    border: 0.5px solid black;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+        <div class="topic">
+            <p id="topic">Github</p>
+            <hr id="line">
+        </div>
+        <div class="question">
+                <div class="q" id="q1">
+                    <p>1.<br>Which command should you use to initialize a new Git repository?</p>
+                    <p>git  <input type="text" placeholder="Enter your answer" id="answer11" name="a1"></p>
+                    <div id="error"></div>    
+                </div>
+                <hr id="line">
+                
+                <div class="q" id="q2">
+                    <p>2.<br>Which file can you configure to ensure that certain file types are never committed to the local Git repository?</p>
+                   <input type="text" placeholder="Enter your answer" id="answer21" name="a2">
+                   <div id="error"></div>
+                </div>
+                <hr id="line">
+
+                <div class="q" id="q3">
+                    <p>3.<br>Which of the following is not a Git configuration scope?</p>
+                    <p>Local</p><p>User</p><p>System</p><p>Global</p>
+                    <input type="text" placeholder="Enter your answer" id="answer31" name="a3">
+                    <div id="error"></div>
+                    </div>
+                    <hr id="line">
+
+                <div class="q" id="q4">
+                    <p>4.<br>Complete the flow</p>
+                    Working space &gt; <input type="text" placeholder="Enter your answer" id="answer41" name="a4"> &gt; Local repository
+                    <div id="error"></div>
+                </div>
+               
+
+                <div  class="submit">
+                    <button id="submit">Submit</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+<script src="githubassignment.js"></script>
+</html>

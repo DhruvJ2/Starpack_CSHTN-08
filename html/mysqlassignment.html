@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysqlAssignment</title>
+    <style>
+        #topic{
+            position: relative;
+            margin-left: 50%;
+            transform: translate(-15%);
+            font-size: larger;
+        }
+        .q{
+            position:relative;
+            margin-top: 5%;
+        }
+        input{
+            border: none;
+            border-bottom:2px solid black;
+        }
+        button{
+            position: relative;
+            margin-left: 50%;
+            transform: translate(-80%);
+        }
+        .container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 90%;
+    width: 70%;
+    /* border: 1px solid black; */
+    margin-left: 15%;
+    margin-top: 50px;
+    /* padding-right: 9%; */
+    
+}
+body{
+    background-image: url("Images/Bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.center{
+    padding-left: 10%;
+}
+.topic{
+    font-size: 30px;
+    font-weight: bold;
+}
+#line{
+    margin-right: 10%;
+    border: 0.5px solid black;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="center">
+        <div class="topic">
+            <p id="topic">Mysql</p>
+            <hr id="line">
+        </div>
+        <div class="question">
+                <div class="q" id="q1">
+                    <p>1.<br>Write the correct SQL statement to create a new database called testDB.</p>
+                    <input type="text" placeholder="Enter your answer" id="answer11" name="a1">
+                    <div id="error"></div>
+                </div>
+                <hr id="line">
+                
+                <div class="q" id="q2">
+                    <p>2.<br>Add a column of type DATE called Birthday.</p>
+                   <input type="text" placeholder="Enter your answer" id="answer21" name="a2"> Persons;<br><br>
+                   <input type="text" placeholder="Enter your answer" id="answer22" name="a2">  ;
+                   <div id="error"></div>
+                   </div>
+                   <hr id="line">
+
+                <div class="q" id="q3">
+                    <p>3.<br>Use an SQL function to select the record with the highest value of the Price column.</p>
+                    <p id="statemnt1">SELECT</p><input type="text" placeholder="Enter your answer" id="anaswer31" name="a3"><p id="statemnt5">FROM PRODUCTS;</p>
+                    <div id="error"></div>
+                    </div>
+                    <hr id="line">
+                    
+                <div class="q" id="q4">
+                    <p>4.<br>Update the City column of all records in the Customers table.</p>
+                    <p><input type="text" placeholder="Enter your answer" id="answer41" name="a4"> CUSTOMERS</p> <input type="text" placeholder="Enter your answer" id="answer42" name="a4">   City = 'Oslo';
+                    <div id="error"></div>
+                    </div>
+                <div class="submit">
+                    <button id="submit">Submit</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+<script src="mysqlassignment.js"></script>
+</html>

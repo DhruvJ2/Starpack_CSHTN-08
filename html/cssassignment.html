@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSASSIGNMENT</title>
+    <style>
+        #topic{
+            position: relative;
+            margin-left: 50%;
+            transform: translate(-15%);
+            font-size: larger;
+        }
+        .q{
+            position:relative;
+            margin-top: 5%;
+        }
+        input{
+            border: none;
+            border-bottom:2px solid black;
+        }
+        .container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 90%;
+    width: 70%;
+    /* border: 1px solid black; */
+    margin-left: 15%;
+    margin-top: 50px;
+    /* padding-right: 9%; */
+    
+}
+body{
+    background-image: url("Images/Bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.center{
+    padding-left: 10%;
+}
+.topic{
+    font-size: 30px;
+    font-weight: bold;
+}
+#line{
+    margin-right: 10%;
+    border: 0.5px solid black;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+        <div class="topic">
+            <p id="topic">CSS</p>
+            <hr id="line">
+        </div>
+        <div class="question">
+                <div class="q" id="q1">
+                    <p>1.<br>Make the background color of &lt;h1> as light blue.</p>
+                   &lt;html&gt; <br> &lt;head> <br> &lt;style> <br>
+                    <input type="text" placeholder="Enter your answer" id="answer11" name="a1"> <br> &lt;/style> <br> &lt;/head> <br> &lt;body> <br>
+
+                    &lt;h1>This is a Heading &lt;/h1> <br>
+                    &lt;p>This is a paragraph&lt;/p> <br>
+                    
+                    &lt;/body> <br>
+                    &lt;/html>
+                    <div id="error"></div>
+                </div>
+                <hr id="line">
+                
+                <div class="q" id="q2">
+                    <p>2.<br>Make the width of &lt;div> 200px and background color as light blue </p>
+                    &lt;html> <br> &lt;head> <br> &lt;style> <br>
+                     <input type="text" placeholder="Enter your answer" id="answer21" name="a1"> <br> &lt;/style> <br> &lt;/head> <br> &lt;body> <br>
+&lt;div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/div> <br>
+&lt;/body> <br>
+&lt;/html>
+<div id="error"></div>
+             </div>
+             <hr id="line">
+
+                <div class="q" id="q3">
+                    <p>3.<br>Add a border of 1px and solid black</p>
+                    &lt;html> <br> &lt;head> <br> &lt;style> <br>
+                    <input type="text" placeholder="Enter your answer" id="answer31" name="a1"> <br> &lt;/style> <br> &lt;/head> <br> &lt;body> <br> &lt;table> <br> &lt;tr> <br> &lt;th>Firstname &lt;/th> <br> &lt;th>Lastname &lt;/th> <br> &lt;/tr> <br> &lt;tr> <br>  &lt;td>Peter &lt;/td> <br> &lt;td> Griffin &lt;/td> <br>  &lt;/tr> <br> &lt;tr> <br> &lt;td> Lois &lt;/td> <br> &lt;td>Griffin &lt;/td> <br> &lt;/tr> <br> &lt;/table> <br> &lt;/body> <br> &lt;/html> <br>
+                    <div id="error"></div>
+                    </div>
+                    <hr id="line">
+
+                <div class="q" id="q4">
+                    <p>4.<br> Add a red dotted border of red color to &lt;p&gt;</p>
+                    &lt;html><br> &lt;head><br> &lt;style><br> <input type="text" placeholder="Enter your answer" id="answer41" name="a1"><br> &lt;/style><br> &lt; /head><br> &lt; body><br> &lt; h1>This is a Heading&lt; /h1><br>  &lt; p>This is a paragraph.&lt; /p><br> &lt;/body> <br>&lt;/html>
+                    <div id="error"></div>
+                    </div>
+                    
+               
+
+                <div>
+                    <center><Button id="submit"> Submit </Button></center>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+</body> 
+<script src="cssassignment.js"></script>
+</html>
