@@ -1,0 +1,167 @@
+body {
+    background-image: url("../Images/Background.png");
+    background-repeat: no-repeat;
+    image-orientation: none;
+    background-size: 100% 80%;
+}
+/* Navigation bar*/
+
+.nav ul {
+    list-style: none;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    backdrop-filter: blur(1);
+    background-color: #000;
+}
+.top-list{
+    border-radius: 10px;
+}
+
+.nav ul li {
+    font-family: Arial, Helvetica, sans-serif ;
+    border-bottom: none;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+    padding: 0 60px;
+}
+.top-list:hover li a{
+    opacity: .2;
+    filter: blur(2px);
+}
+.sub-nav:hover li a{
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+.nav ul li a:hover {
+    background-color: #FF6A3D;
+    color: #fff;
+    opacity: 1;
+    filter: blur(0);
+}
+  
+.nav a {
+    border-bottom:none;
+}
+
+.nav li ul {
+    position:absolute;
+    display:none;
+    width:max-content;
+	text-align:center;
+}
+
+.sub-nav li ul{
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 100%;
+    opacity: 1;
+    filter: blur(0);
+}
+
+.nav li:hover .sub-nav {
+    display:block;
+}
+
+.sub-nav li:hover ul { 
+    display:block;
+}
+
+.nav ul li ul li {
+  display: block;
+  float:none ;
+  height:auto; 
+  line-height:45px;
+}
+/* Color: #1A2238
+#9DAAF2
+#FF6A3D
+#F4DB7D 
+
+font-family: Arial, Helvetica, sans-serif
+*/
+
+/*Heading */
+.title{
+    color: #9DAAF2;
+    font-size: 80px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content:baseline;
+    margin: 20% 9%;
+    letter-spacing: 10px;
+}
+.rich-text{
+    display: inline-block;
+    color:  #1A2238;
+    font-size: 80px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content:baseline;
+    margin: 0 3%;
+    letter-spacing: 10px;
+}
+
+.sub-title{
+    display: block;
+    color: #fff ;
+    font-size: 54px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content:start;
+    margin: 15% 47%;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-image: url("../Images/Background.png");
+        transform: rotate(90deg) background-image;
+    }
+    .title{
+        color: #fff;
+    }
+    .sub-title{
+        color: #fff;
+        margin: 30% -72%;
+        width: 450px;
+    }
+    .nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub-nav li ul{
+        display: none;
+        position: absolute;
+        left: -115%;
+        top: 50%;
+    }
+    .sub-nav li:hover ul{
+        display: block;
+    }
+    .sub-nav {
+        left: 57%;
+    }
+}
+

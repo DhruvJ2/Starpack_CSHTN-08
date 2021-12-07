@@ -37,4 +37,3 @@ for(let i=0; i<course.length; i++){
     });
 }
 
-
