@@ -1,9 +1,22 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
 body {
     background-image: url("../Images/Background.png");
     background-repeat: no-repeat;
     image-orientation: none;
-    background-size: 100% 80%;
+    background-size: 100% 50em;
+    background-color: #f5f5dc;
 }
+/* Color: #1A2238
+#9DAAF2
+#FF6A3D
+#f5f5dc
+
+font-family: Arial, Helvetica, sans-serif
+*/
+
 /* Navigation bar*/
 
 .nav ul {
@@ -89,24 +102,17 @@ body {
   height:auto; 
   line-height:45px;
 }
-/* Color: #1A2238
-#9DAAF2
-#FF6A3D
-#F4DB7D 
-
-font-family: Arial, Helvetica, sans-serif
-*/
 
 /*Heading */
 .title{
-    color: #9DAAF2;
+    color: #fff;
     font-size: 80px;
     font-weight: bold;
     font-variant: small-caps;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content:baseline;
-    margin: 20% 9%;
+    margin: 10% 9%;
     letter-spacing: 10px;
 }
 .rich-text{
@@ -130,8 +136,136 @@ font-family: Arial, Helvetica, sans-serif
     font-variant: small-caps;
     font-family: Arial, Helvetica, sans-serif;
     justify-content:start;
-    margin: 15% 47%;
+    margin: 15% 47% 0%;
     letter-spacing: 10px;
+}
+/* 
+.about-conatiner{
+    display: block;
+    justify-content: center;
+    height: 25em;
+    width: 100%;
+    color: #000;
+    margin: 0 auto;
+} */
+
+/* Flow chart*/
+.container{
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.roadmap-header{
+    margin: 0 auto;
+    padding: 20px;
+    border: #1A2238 2px dashed;
+    justify-content: center;
+    text-align:center;
+    width: inherit;
+    font-size: 42px;
+    font-weight: bold;
+    font-family:  Arial, Helvetica, sans-serif;
+    transition: transform .4s linear;
+}
+.roadmap-header:hover{
+    transform: translateY(-15%);
+}   
+.line1, .line2{
+    font-size:0;
+    width: 2px;
+    height:30px;
+    color:#1A2238;
+    background-color:#000;
+    margin:10px auto auto;
+    animation-name: shift;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count:calc(1);
+    animation-timing-function: linear;
+}
+@keyframes shift{
+   from{height: 1px;}
+   to{
+       height:40px;}
+}
+.line3 {
+    justify-content: center;
+    font-size:0;
+    width: 80%;
+    height: 2px;
+    color:#1A2238;
+    background-color:#000;
+    margin:0 auto auto;
+    animation-name: shift1;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count:calc(1);
+    animation-timing-function: linear;
+}
+@keyframes shift1{
+   from{width: 1px;}
+   to{
+    width:80%;}
+}
+.line4, .line5{
+    font-size:0;
+    width: 2px;
+    height: 30px;
+    color:#1A2238;
+    background-color:#000;
+    float: left;
+    animation-name: shift2;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count:calc(1);
+    animation-timing-function: linear;
+}
+@keyframes shift2{
+    from{height: 1px;}
+    to{height:30px;}
+ }
+.flex-container{
+    margin: 0 94px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.flex-container-text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.path{
+    margin: 5px;
+    padding: 30px 40px;
+    letter-spacing: 3px;
+    border: #1A2238 2px dashed;
+    transition:  transform .4s linear;
+    text-decoration: underline solid #FF6A3D 4px;
+}
+.path:hover{
+    transform: translateY(15%);
+}
+
+.path-title{
+    /* justify-content: center; */
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+.flexbox-container2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.line6 ,.line7 {
+    border-left: 4px dotted #000;
+    display: block;
+    height: 100px;
+    width: 1px;
+    margin: 10px auto;
 }
 
 @media screen and (max-width: 600px){
@@ -162,6 +296,30 @@ font-family: Arial, Helvetica, sans-serif
     }
     .sub-nav {
         left: 57%;
+    }
+    .roadmap-header{
+        margin: 0 auto;
+        padding: auto;
+        border: #1A2238 2px dashed;
+        justify-content: center;
+        width: fit-content;
+        font-size: 42px;
+        font-weight: bold;
+        font-family:  Arial, Helvetica, sans-serif;
+        transition: transform .4s linear;
+    }
+    .path{
+        padding: 15px 20px;
+        margin: 0 10px;
+    }
+    .flex-container-text{
+        justify-content:space-around;
+    }
+    .flex-container{
+        margin: 0 28px;
+    }
+    .flexbox-container2{
+        margin: 10px -50px 0;
     }
 }
 
